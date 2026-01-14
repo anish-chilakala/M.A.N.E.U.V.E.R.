@@ -2,6 +2,8 @@
 
 ## Motion Algorithm Naturally Expressed with Unit-Verified Execution Reasoning
 
+### A revolutionary programming language designed specifically for robotics—from hobby robots to autonomous vehicles. MANEUVER combines Python's simplicity with power beyond C++, wrapped in clean, readable syntax that feels like writing instructions in precise Eng
+
 ---
 
 ### What is MANEUVER?
