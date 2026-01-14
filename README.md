@@ -415,19 +415,15 @@ From a child's first robot to humanity's autonomous future—MANEUVER is the lan
 
 // From simple hobby robots to self-driving cars
 
-// ==================================================
-// PART 1: HOBBY ROBOT (Beginner Level)
-// ==================================================
+PART 1: HOBBY ROBOT
 
 robot simple_bot:
     move forward 50cm
     turn right 90 degrees
     blink LED
 
+PART 2: AUTONOMOUS VEHICLE (Advanced Level)
 
-// ==================================================
-// PART 2: AUTONOMOUS VEHICLE (Advanced Level)
-// ==================================================
 
 // 1. VEHICLE SYSTEM DEFINITION
 // -----------------------------
