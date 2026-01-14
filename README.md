@@ -426,7 +426,6 @@ PART 2: AUTONOMOUS VEHICLE (Advanced Level)
 
 
 // 1. VEHICLE SYSTEM DEFINITION
-// -----------------------------
 
 autonomous_vehicle Tesla_Model_S:
     // Hardware configuration
@@ -458,8 +457,7 @@ autonomous_vehicle Tesla_Model_S:
         sensor_fusion: imu_location
 
 
-// 2. PERCEPTION PIPELINE - High Performance
-// ------------------------------------------
+ 2. PERCEPTION PIPELINE - High Performance
 
 perception_system primary_perception:
     // Runs at different frequencies automatically
@@ -535,8 +533,7 @@ perception_system primary_perception:
         if all_fail: execute emergency_stop
 
 
-// 3. LOCALIZATION - Centimeter Precision
-// ---------------------------------------
+ 3. LOCALIZATION - Centimeter Precision
 
 localization_system precise_positioning:
     deadline: 20ms
@@ -594,9 +591,9 @@ localization_system precise_positioning:
         if lidar_fails: rely on gps + odometry  
         if both_fail: dead_reckoning with warning
 
+ 
+ 4. PREDICTION - Anticipate Other Agents
 
-// 4. PREDICTION - Anticipate Other Agents
-// ----------------------------------------
 
 prediction_system agent_forecasting:
     deadline: 100ms
@@ -642,8 +639,8 @@ prediction_system agent_forecasting:
             agent.most_likely_path = highest_probability trajectory
 
 
-// 5. PLANNING - Decide What To Do
-// --------------------------------
+ 5. PLANNING - Decide What To Do
+
 
 planning_system behavioral_planner:
     deadline: 200ms
@@ -729,9 +726,8 @@ planning_system behavioral_planner:
             
         return (maneuver, reference_path, speed_profile)
 
+ 6. CONTROL - Execute The Plan
 
-// 6. CONTROL - Execute The Plan
-// ------------------------------
 
 control_system vehicle_controller:
     frequency: 100 Hz
@@ -807,8 +803,7 @@ control_system vehicle_controller:
         vehicle_response matches expected
 
 
-// 7. SAFETY SYSTEM - Never Compromise
-// ------------------------------------
+ 7. SAFETY SYSTEM - Never Compromise
 
 safety_system autonomous_safety:
     priority: highest
@@ -882,8 +877,7 @@ safety_system autonomous_safety:
             allow manual_braking
 
 
-// 8. COMPLETE AUTONOMOUS DRIVING LOOP
-// ------------------------------------
+ 8. COMPLETE AUTONOMOUS DRIVING LOOP
 
 main autonomous_driving_system:
     // System initialization
@@ -942,8 +936,7 @@ main autonomous_driving_system:
         verify parked correctly
 
 
-// 9. ADVANCED FEATURES - Complex Scenarios
-// -----------------------------------------
+ 9. ADVANCED FEATURES - Complex Scenarios
 
 // Intersection handling with game theory
 scenario unprotected_left_turn:
@@ -1045,16 +1038,15 @@ feature teleoperations:
         encrypted communication
 
 
-// ==================================================
-// SUMMARY: Same Language, All Complexity Levels
-// ==================================================
+ SUMMARY: Same Language, All Complexity Levels
 
-// Beginner robot:
-//   robot.move forward 50cm
-//
-// Autonomous vehicle:
-//   Complete perception, planning, control pipeline
-//   Multi-sensor fusion, prediction, safety systems
-//   Real-time guarantees, fault tolerance
-//
-// ALL IN THE SAME READABLE SYNTAX!
+
+Beginner robot:
+  robot.move forward 50cm
+
+ Autonomous vehicle:
+   Complete perception, planning, control pipeline
+   Multi-sensor fusion, prediction, safety systems
+  Real-time guarantees, fault tolerance
+
+ ALL IN THE SAME READABLE SYNTAX!
