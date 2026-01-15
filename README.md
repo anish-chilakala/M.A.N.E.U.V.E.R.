@@ -4,8 +4,8 @@
 
 ### A revolutionary programming language designed specifically for robotics—from hobby robots to autonomous vehicles. MANEUVER combines Python's simplicity with power beyond C++, wrapped in clean, readable syntax that feels like writing instructions in precise English
 
-Maneuver Programming Language Link:
-https://anish-chilakala.github.io/M.A.N.E.U.V.E.R./
+Maneuver Programming Language:
+
 
 Code Playground Link:
 https://anish-chilakala.github.io/Maneuver-Code-Playground/
